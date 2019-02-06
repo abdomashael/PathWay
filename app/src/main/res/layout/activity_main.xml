@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csefee.mashael.muslat.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popular"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="Search  "
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/design_bottom_navigation_text_size"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/hidebutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/up" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:paddingStart="0dp">
+
+                <TextView
+                    android:id="@+id/search_from"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=" From  "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/design_bottom_navigation_text_size"
+                    android:textStyle="bold" />
+
+                <SearchView
+                    android:id="@+id/FromSearchView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/mynote"
+                    android:padding="5dp"
+                    android:queryHint="Enter the Start point"
+                    android:suggestionRowLayout="@color/colorPrimaryDarkS"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="100dp"
+                android:paddingStart="0dp">
+
+
+                <TextView
+                    android:id="@+id/search_to"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=" To  "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/design_bottom_navigation_text_size"
+                    android:textStyle="bold" />
+
+                <SearchView
+                    android:id="@+id/ToSearchView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/mynote"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:queryHint="Enter the End point" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/mybutton"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/selection_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/selection_spinner"
+                android:minHeight="30dp"
+                android:popupBackground="@color/colorGray"
+                android:spinnerMode="dialog"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/line_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:text="NOTE: this is combined way use all of them to reach your Destination "
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone" />
+
+
+                <FrameLayout
+                    android:id="@+id/p_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorGray">
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/cardview_dark_background"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/navigation_icon"
+        app:itemTextColor="@drawable/navigation_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PathWay</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail">Directions</string>
+    <string name="google_maps_key">AIzaSyA9jtxB1HeGueelKufCnEn3_yI6nor1EMg</string>
+    <string name="directons">Directions</string>
+    <string name="Favourites">Favourites</string>
+    <string name="notes">Notes</string>
+    <string name="contact_us">Contact us</string>
+    <string name="user_company_id">Company User ID</string>
+    <string name="contact_change">Change Company Contact</string>
+    <string name="schedule">Schedule</string>
+    //Abdelwarth
+    <string name="sign_in">Sign in</string>
+    <string name="exit">Exit</string>
+    <string name="enter_password">enter password</string>
+    <string name="enter_username">enter user name</string>
+    <string name="welcome">welcome our client</string>
+    <string name="send_message">we will be happy to receive your message</string>
+    <string name="login">enter user name and password</string>
+    <string name="home">news home</string>
+    <string name="enter_id">Enter your ID</string>
+    <string name="mobile">mobile call</string>
+    <string name="message">send message</string>
+    <string name="email">e mail</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    //Spinner MainActivity entries
+    <array name="selection_spinner">
+        <item>SuperJet</item>
+        <item>Train</item>
+        <item>Public Bus - Cairo</item>
+        <item>Public Transport</item>
+    </array>
+    <string name="title_activity_suggestion">Suggestion</string>
+    <string name="title_activity_notes">Notes</string>
+
+    <string name="title_activity_comments">Comments</string>
+    <string name="action_comment">Comment</string>
+    <string name="action_refresh">Reload</string>
+</resources>
